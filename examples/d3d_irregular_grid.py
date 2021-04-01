@@ -89,7 +89,7 @@ def get_variable_points(data, variable,x=None,y=None,z=None,points=None,
     if len(x) != len(y) or len(x) != len(z):
         # Now find greatest length
         length = 0
-        directions = {0: {'name' : 'x',
+        directions = {0:{'name' : 'x',
                          'values': x},
                       1:{'name' : 'y',
                          'values' : y},
