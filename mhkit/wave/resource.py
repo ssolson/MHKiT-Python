@@ -65,7 +65,7 @@ def elevation_spectrum(eta, sample_rate, nnft, window='hann', detrend=True, nove
 
 def pierson_moskowitz_spectrum(f, Tp, Hs):
     """
-    Calculates Pierson-Moskowitz Spectrum from Tucker and Pitt (2001) 
+    Calculates Pierson-Moskowitz Spectrum from IEC TS 62600-2 ED2 Annex C.2 (2019)
     
     Parameters
     ------------
@@ -103,7 +103,7 @@ def pierson_moskowitz_spectrum(f, Tp, Hs):
 
 def jonswap_spectrum(f, Tp, Hs, gamma=None):
     """
-    Calculates JONSWAP spectrum from Hasselmann et al (1973)
+    Calculates JONSWAP Spectrum from IEC TS 62600-2 ED2 Annex C.2 (2019)
     
     Parameters
     ------------
