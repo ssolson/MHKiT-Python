@@ -107,6 +107,8 @@ def harmonics(
         hertz = np.arange(0, 3060, 5)
     elif grid_freq == 50:
         hertz = np.arange(0, 2570, 5)
+    else:
+        raise ValueError(f"grid_freq must be either 50 or 60. Got {grid_freq}")
 
     harmonic_amplitudes = harmonic_amplitudes.reindex(
         {"frequency": hertz}, method="nearest"
@@ -344,7 +346,8 @@ def interharmonics(
         hertz = np.arange(0, 3060, 60)
     elif grid_freq == 50:
         hertz = np.arange(0, 2550, 50)
-
+    else:
+        raise ValueError(f"grid_freq must be either 50 or 60. Got {grid_freq}")
     # Sort input data index
     if frequency_dimension == "":
         frequency_dimension = list(harmonic_amplitudes.dims)[0]
