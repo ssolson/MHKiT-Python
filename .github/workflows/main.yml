@@ -9,6 +9,7 @@ on:
     branches:
       - master
       - develop
+      - doc_fixes
 jobs:
   set-os:
     runs-on: ubuntu-latest
@@ -52,7 +53,7 @@ jobs:
   prepare-nonhindcast-cache:
     runs-on: ubuntu-latest
     env:
-      PYTHON_VER: 3.9
+      PYTHON_VER: 3.10
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
