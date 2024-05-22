@@ -53,7 +53,7 @@ jobs:
   prepare-nonhindcast-cache:
     runs-on: ubuntu-latest
     env:
-      PYTHON_VER: 3.10
+      PYTHON_VER: '3.10'
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
